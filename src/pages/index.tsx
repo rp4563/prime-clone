@@ -3,6 +3,12 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
+import hp from "../../public/images/herapheri.jpg";
+import { FaRegPlayCircle } from "react-icons/Fa";
+import { VscAdd } from "react-icons/vsc";
+import { BiBlock } from "react-icons/Bi";
+import { FiPlay } from "react-icons/Fi";
+import { TfiCommentAlt } from "react-icons/tfi";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,8 +23,46 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
-        <main className="bg-[#0f161f]">
-          <div>jsqh</div>
+        <main className="bg-[#0f161f] h-full w-full">
+          <span className="text-[#8197a4]">Amazon Original Series</span>
+          <div className="flex h-full w-full justify-center items-center gap-2">
+            <div className="w-72 hover:w-80 hover:border-[#0f79af] hover:border-2 hover:visible">
+              <Image src={hp} className="w-full" />
+              <div className="invisible hover:visible">
+                <div className="text-white flex ">
+                  <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
+                    <button>
+                      <FaRegPlayCircle className="h-10" />
+                    </button>
+                    <span>Play</span>
+                  </div>
+                  <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
+                    <button>
+                      <FiPlay className="h-10" />
+                    </button>
+                    <button>
+                      <VscAdd className="h-10" />
+                    </button>
+                    <button>
+                      <BiBlock className="h-10" />
+                    </button>
+                  </div>
+                </div>
+                <div className="text-white p-4 ">
+                  <h3>Hera Pheri</h3>
+                  <p className="my-1 text-xs">
+                    Three unemployed men find the answer to all their money
+                    problems when they recieve a call from a kidnapper
+                  </p>
+                  <p className="flex items-center gap-5">
+                    2hr 13min
+                    <span>2000</span>
+                    <TfiCommentAlt />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
         <Footer />
       </main>

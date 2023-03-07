@@ -7,7 +7,7 @@ const Footer = () => {
         <div>
           <Image src={thumbnail} width="120" alt="image" />
         </div>
-        <div className="flex items-center justify-center gap-4 text-[#79b8f3] my-4 ">
+        <div className="flex items-center justify-center gap-4 text-[#79b8f3] my-4 flex-col md:flex-row">
           <span>Terms and Privacy Notice</span>
           <span>Send us feedback</span>
           <span>Help</span>
