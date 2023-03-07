@@ -3,7 +3,6 @@ import { MdAccountCircle } from "react-icons/md";
 import { AiOutlineCaretDown } from "react-icons/ai";
 import Image from "next/image";
 import thumbnail from "../public/images/thumbnail.svg";
-import Link from "next/link";
 const Navbar = () => {
   return (
     <nav>
