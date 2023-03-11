@@ -4,12 +4,18 @@ import { Inter } from "next/font/google";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import hp from "../../public/images/herapheri.jpg";
+import i1 from "../../public/images/frzi.jpg";
+import i2 from "../../public/images/rs.jpg";
+import i3 from "../../public/images/drishyam.jpg";
+import i4 from "../../public/images/chris.jpg";
+
 import { FaRegPlayCircle } from "react-icons/Fa";
 import { VscAdd } from "react-icons/vsc";
 import { BiBlock } from "react-icons/Bi";
 import { FiPlay } from "react-icons/Fi";
 import { TfiCommentAlt } from "react-icons/tfi";
-
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 export default function Home() {
   return (
     <>
@@ -21,13 +27,27 @@ export default function Home() {
       </Head>
       <main className="bg-[#0f161f]">
         <Navbar />
-        <div className="h-full w-full">
-          <span className="text-[#8197a4] px-4">Amazon Original Series</span>
-          <div className="flex h-full w-full justify-center items-center gap-8 ml-96 my-4">
-            <div className="hover:border-[#0f79af] hover:border-2 ">
-              <div className="w-72 hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+        <Carousel className="mx-10">
+          <div>
+            <Image src={i1} alt="image1" className="h-96 max-sm:h-60" />
+          </div>
+          <div>
+            <Image src={i2} alt="image2" className="h-96 max-sm:h-60" />
+          </div>
+          <div>
+            <Image src={i3} alt="image3" className="h-96 max-sm:h-60" />
+          </div>
+          <div>
+            <Image src={i4} alt="image4" className="h-96 max-sm:h-60" />
+          </div>
+        </Carousel>
+        <div className="h-full w-full ">
+          <span className="text-[#8197a4] px-10">Amazon Original Series</span>
+          <div className="flex-col justify-center items-center">
+            <div className="flex justify-center items-center gap-8 my-8 max-sm:flex-col sm:mx-12">
+              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
                 <Image src={hp} className="w-full" alt="image" />
-                <div className="absolute hidden group-hover:block ">
+                <div className="bg-[#18232f] absolute hidden group-hover:block ">
                   <div className="text-white flex ">
                     <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
                       <button>
@@ -53,7 +73,115 @@ export default function Home() {
                       Three unemployed men find the answer to all their money
                       problems when they recieve a call from a kidnapper
                     </p>
-                    <p className="flex items-center gap-5">
+                    <p className="flex items-center gap-5 mt-4">
+                      2hr 13min
+                      <span>2000</span>
+                      <TfiCommentAlt />
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+                <Image src={hp} className="w-full" alt="image" />
+                <div className="bg-[#18232f] absolute hidden group-hover:block ">
+                  <div className="text-white flex ">
+                    <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
+                      <button>
+                        <FaRegPlayCircle className="h-10" />
+                      </button>
+                      <span>Play</span>
+                    </div>
+                    <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
+                      <button>
+                        <FiPlay className="h-10" />
+                      </button>
+                      <button>
+                        <VscAdd className="h-10" />
+                      </button>
+                      <button>
+                        <BiBlock className="h-10" />
+                      </button>
+                    </div>
+                  </div>
+                  <div className="text-white p-2 px-4">
+                    <h3>Farzi</h3>
+                    <p className="my-3">
+                      Three unemployed men find the answer to all their money
+                      problems when they recieve a call from a kidnapper
+                    </p>
+                    <p className="flex items-center gap-5 mt-4">
+                      2hr 13min
+                      <span>2000</span>
+                      <TfiCommentAlt />
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+                <Image src={hp} className="w-full" alt="image" />
+                <div className="bg-[#18232f] absolute hidden group-hover:block ">
+                  <div className="text-white flex ">
+                    <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
+                      <button>
+                        <FaRegPlayCircle className="h-10" />
+                      </button>
+                      <span>Play</span>
+                    </div>
+                    <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
+                      <button>
+                        <FiPlay className="h-10" />
+                      </button>
+                      <button>
+                        <VscAdd className="h-10" />
+                      </button>
+                      <button>
+                        <BiBlock className="h-10" />
+                      </button>
+                    </div>
+                  </div>
+                  <div className="text-white p-2 px-4">
+                    <h3>Hera Pheri</h3>
+                    <p className="my-3">
+                      Three unemployed men find the answer to all their money
+                      problems when they recieve a call from a kidnapper
+                    </p>
+                    <p className="flex items-center gap-5 mt-4">
+                      2hr 13min
+                      <span>2000</span>
+                      <TfiCommentAlt />
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+                <Image src={hp} className="w-full" alt="image" />
+                <div className="bg-[#18232f] absolute hidden group-hover:block ">
+                  <div className="text-white flex ">
+                    <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
+                      <button>
+                        <FaRegPlayCircle className="h-10" />
+                      </button>
+                      <span>Play</span>
+                    </div>
+                    <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
+                      <button>
+                        <FiPlay className="h-10" />
+                      </button>
+                      <button>
+                        <VscAdd className="h-10" />
+                      </button>
+                      <button>
+                        <BiBlock className="h-10" />
+                      </button>
+                    </div>
+                  </div>
+                  <div className="text-white p-2 px-4">
+                    <h3>Farzi</h3>
+                    <p className="my-3">
+                      Three unemployed men find the answer to all their money
+                      problems when they recieve a call from a kidnapper
+                    </p>
+                    <p className="flex items-center gap-5 mt-4">
                       2hr 13min
                       <span>2000</span>
                       <TfiCommentAlt />
@@ -62,10 +190,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="hover:border-[#0f79af] hover:border-2 ">
-              <div className="w-72 hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
-                <Image src={hp} className="w-full" alt="image" />
-                <div className="absolute hidden group-hover:block ">
+            <div className="flex justify-center items-center gap-8 my-8 max-sm:flex-col sm:mx-12">
+              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+                <Image src={i3} className="w-full" alt="image" />
+                <div className="bg-[#18232f] absolute hidden group-hover:block ">
                   <div className="text-white flex ">
                     <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
                       <button>
@@ -91,7 +219,115 @@ export default function Home() {
                       Three unemployed men find the answer to all their money
                       problems when they recieve a call from a kidnapper
                     </p>
-                    <p className="flex items-center gap-5">
+                    <p className="flex items-center gap-5 mt-4">
+                      2hr 13min
+                      <span>2000</span>
+                      <TfiCommentAlt />
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+                <Image src={i3} className="w-full" alt="image" />
+                <div className="bg-[#18232f] absolute hidden group-hover:block ">
+                  <div className="text-white flex ">
+                    <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
+                      <button>
+                        <FaRegPlayCircle className="h-10" />
+                      </button>
+                      <span>Play</span>
+                    </div>
+                    <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
+                      <button>
+                        <FiPlay className="h-10" />
+                      </button>
+                      <button>
+                        <VscAdd className="h-10" />
+                      </button>
+                      <button>
+                        <BiBlock className="h-10" />
+                      </button>
+                    </div>
+                  </div>
+                  <div className="text-white p-2 px-4">
+                    <h3>Farzi</h3>
+                    <p className="my-3">
+                      Three unemployed men find the answer to all their money
+                      problems when they recieve a call from a kidnapper
+                    </p>
+                    <p className="flex items-center gap-5 mt-4">
+                      2hr 13min
+                      <span>2000</span>
+                      <TfiCommentAlt />
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+                <Image src={i3} className="w-full" alt="image" />
+                <div className="bg-[#18232f] absolute hidden group-hover:block ">
+                  <div className="text-white flex ">
+                    <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
+                      <button>
+                        <FaRegPlayCircle className="h-10" />
+                      </button>
+                      <span>Play</span>
+                    </div>
+                    <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
+                      <button>
+                        <FiPlay className="h-10" />
+                      </button>
+                      <button>
+                        <VscAdd className="h-10" />
+                      </button>
+                      <button>
+                        <BiBlock className="h-10" />
+                      </button>
+                    </div>
+                  </div>
+                  <div className="text-white p-2 px-4">
+                    <h3>Hera Pheri</h3>
+                    <p className="my-3">
+                      Three unemployed men find the answer to all their money
+                      problems when they recieve a call from a kidnapper
+                    </p>
+                    <p className="flex items-center gap-5 mt-4">
+                      2hr 13min
+                      <span>2000</span>
+                      <TfiCommentAlt />
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+                <Image src={i3} className="w-full" alt="image" />
+                <div className="bg-[#18232f] absolute hidden group-hover:block ">
+                  <div className="text-white flex ">
+                    <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
+                      <button>
+                        <FaRegPlayCircle className="h-10" />
+                      </button>
+                      <span>Play</span>
+                    </div>
+                    <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
+                      <button>
+                        <FiPlay className="h-10" />
+                      </button>
+                      <button>
+                        <VscAdd className="h-10" />
+                      </button>
+                      <button>
+                        <BiBlock className="h-10" />
+                      </button>
+                    </div>
+                  </div>
+                  <div className="text-white p-2 px-4">
+                    <h3>Farzi</h3>
+                    <p className="my-3">
+                      Three unemployed men find the answer to all their money
+                      problems when they recieve a call from a kidnapper
+                    </p>
+                    <p className="flex items-center gap-5 mt-4">
                       2hr 13min
                       <span>2000</span>
                       <TfiCommentAlt />
@@ -100,10 +336,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="hover:border-[#0f79af] hover:border-2 ">
-              <div className="w-72 hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
-                <Image src={hp} className="w-full" alt="image" />
-                <div className="absolute hidden group-hover:block ">
+            <div className="flex justify-center items-center gap-8 my-8 max-sm:flex-col sm:mx-12">
+              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+                <Image src={i4} className="w-full" alt="image" />
+                <div className="bg-[#18232f] absolute hidden group-hover:block ">
                   <div className="text-white flex ">
                     <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
                       <button>
@@ -129,7 +365,7 @@ export default function Home() {
                       Three unemployed men find the answer to all their money
                       problems when they recieve a call from a kidnapper
                     </p>
-                    <p className="flex items-center gap-5">
+                    <p className="flex items-center gap-5 mt-4">
                       2hr 13min
                       <span>2000</span>
                       <TfiCommentAlt />
@@ -137,11 +373,9 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="hover:border-[#0f79af] hover:border-2 ">
-              <div className="w-72 hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
-                <Image src={hp} className="w-full" alt="image" />
-                <div className="absolute hidden group-hover:block ">
+              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+                <Image src={i4} className="w-full" alt="image" />
+                <div className="bg-[#18232f] absolute hidden group-hover:block ">
                   <div className="text-white flex ">
                     <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
                       <button>
@@ -162,12 +396,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="text-white p-2 px-4">
-                    <h3>Hera Pheri</h3>
+                    <h3>Farzi</h3>
                     <p className="my-3">
                       Three unemployed men find the answer to all their money
                       problems when they recieve a call from a kidnapper
                     </p>
-                    <p className="flex items-center gap-5">
+                    <p className="flex items-center gap-5 mt-4">
                       2hr 13min
                       <span>2000</span>
                       <TfiCommentAlt />
@@ -175,11 +409,9 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="hover:border-[#0f79af] hover:border-2 ">
-              <div className="w-72 hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
-                <Image src={hp} className="w-full" alt="image" />
-                <div className="absolute hidden group-hover:block ">
+              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+                <Image src={i4} className="w-full" alt="image" />
+                <div className="bg-[#18232f] absolute hidden group-hover:block ">
                   <div className="text-white flex ">
                     <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
                       <button>
@@ -205,7 +437,7 @@ export default function Home() {
                       Three unemployed men find the answer to all their money
                       problems when they recieve a call from a kidnapper
                     </p>
-                    <p className="flex items-center gap-5">
+                    <p className="flex items-center gap-5 mt-4">
                       2hr 13min
                       <span>2000</span>
                       <TfiCommentAlt />
@@ -213,11 +445,9 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="hover:border-[#0f79af] hover:border-2 ">
-              <div className="w-72 hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
-                <Image src={hp} className="w-full" alt="image" />
-                <div className="absolute hidden group-hover:block ">
+              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+                <Image src={i4} className="w-full" alt="image" />
+                <div className="bg-[#18232f] absolute hidden group-hover:block ">
                   <div className="text-white flex ">
                     <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
                       <button>
@@ -238,50 +468,12 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="text-white p-2 px-4">
-                    <h3>Hera Pheri</h3>
+                    <h3>Farzi</h3>
                     <p className="my-3">
                       Three unemployed men find the answer to all their money
                       problems when they recieve a call from a kidnapper
                     </p>
-                    <p className="flex items-center gap-5">
-                      2hr 13min
-                      <span>2000</span>
-                      <TfiCommentAlt />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="hover:border-[#0f79af] hover:border-2 ">
-              <div className="w-72 hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
-                <Image src={hp} className="w-full" alt="image" />
-                <div className="absolute hidden group-hover:block ">
-                  <div className="text-white flex ">
-                    <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
-                      <button>
-                        <FaRegPlayCircle className="h-10" />
-                      </button>
-                      <span>Play</span>
-                    </div>
-                    <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
-                      <button>
-                        <FiPlay className="h-10" />
-                      </button>
-                      <button>
-                        <VscAdd className="h-10" />
-                      </button>
-                      <button>
-                        <BiBlock className="h-10" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="text-white p-2 px-4">
-                    <h3>Hera Pheri</h3>
-                    <p className="my-3">
-                      Three unemployed men find the answer to all their money
-                      problems when they recieve a call from a kidnapper
-                    </p>
-                    <p className="flex items-center gap-5">
+                    <p className="flex items-center gap-5 mt-4">
                       2hr 13min
                       <span>2000</span>
                       <TfiCommentAlt />
@@ -292,547 +484,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="h-full w-full  flex-wrap">
-          <span className="text-white px-6 font-bold text-2xl">
-            Recommended Movies
+        {/* <div className="h-full w-full my-4 px-6">
+          <span className="text-white text-3xl px-4 font-semibold">
+            Recommended movies
           </span>
-          <div className="flex h-full w-full justify-center items-center gap-8 ml-96 my-4">
-            <div className="hover:border-[#0f79af] hover:border-2 ">
-              <div className="w-72 hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
-                <Image src={hp} className="w-full" alt="image" />
-                <div className="absolute hidden group-hover:block ">
-                  <div className="text-white flex ">
-                    <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
-                      <button>
-                        <FaRegPlayCircle className="h-10" />
-                      </button>
-                      <span>Play</span>
-                    </div>
-                    <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
-                      <button>
-                        <FiPlay className="h-10" />
-                      </button>
-                      <button>
-                        <VscAdd className="h-10" />
-                      </button>
-                      <button>
-                        <BiBlock className="h-10" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="text-white p-2 px-4">
-                    <h3>Hera Pheri</h3>
-                    <p className="my-3">
-                      Three unemployed men find the answer to all their money
-                      problems when they recieve a call from a kidnapper
-                    </p>
-                    <p className="flex items-center gap-5">
-                      2hr 13min
-                      <span>2000</span>
-                      <TfiCommentAlt />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="hover:border-[#0f79af] hover:border-2 ">
-              <div className="w-72 hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
-                <Image src={hp} className="w-full" alt="image" />
-                <div className="absolute hidden group-hover:block ">
-                  <div className="text-white flex ">
-                    <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
-                      <button>
-                        <FaRegPlayCircle className="h-10" />
-                      </button>
-                      <span>Play</span>
-                    </div>
-                    <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
-                      <button>
-                        <FiPlay className="h-10" />
-                      </button>
-                      <button>
-                        <VscAdd className="h-10" />
-                      </button>
-                      <button>
-                        <BiBlock className="h-10" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="text-white p-2 px-4">
-                    <h3>Hera Pheri</h3>
-                    <p className="my-3">
-                      Three unemployed men find the answer to all their money
-                      problems when they recieve a call from a kidnapper
-                    </p>
-                    <p className="flex items-center gap-5">
-                      2hr 13min
-                      <span>2000</span>
-                      <TfiCommentAlt />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="hover:border-[#0f79af] hover:border-2 ">
-              <div className="w-72 hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
-                <Image src={hp} className="w-full" alt="image" />
-                <div className="absolute hidden group-hover:block ">
-                  <div className="text-white flex ">
-                    <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
-                      <button>
-                        <FaRegPlayCircle className="h-10" />
-                      </button>
-                      <span>Play</span>
-                    </div>
-                    <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
-                      <button>
-                        <FiPlay className="h-10" />
-                      </button>
-                      <button>
-                        <VscAdd className="h-10" />
-                      </button>
-                      <button>
-                        <BiBlock className="h-10" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="text-white p-2 px-4">
-                    <h3>Hera Pheri</h3>
-                    <p className="my-3">
-                      Three unemployed men find the answer to all their money
-                      problems when they recieve a call from a kidnapper
-                    </p>
-                    <p className="flex items-center gap-5">
-                      2hr 13min
-                      <span>2000</span>
-                      <TfiCommentAlt />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="hover:border-[#0f79af] hover:border-2 ">
-              <div className="w-72 hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
-                <Image src={hp} className="w-full" alt="image" />
-                <div className="absolute hidden group-hover:block ">
-                  <div className="text-white flex ">
-                    <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
-                      <button>
-                        <FaRegPlayCircle className="h-10" />
-                      </button>
-                      <span>Play</span>
-                    </div>
-                    <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
-                      <button>
-                        <FiPlay className="h-10" />
-                      </button>
-                      <button>
-                        <VscAdd className="h-10" />
-                      </button>
-                      <button>
-                        <BiBlock className="h-10" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="text-white p-2 px-4">
-                    <h3>Hera Pheri</h3>
-                    <p className="my-3">
-                      Three unemployed men find the answer to all their money
-                      problems when they recieve a call from a kidnapper
-                    </p>
-                    <p className="flex items-center gap-5">
-                      2hr 13min
-                      <span>2000</span>
-                      <TfiCommentAlt />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="hover:border-[#0f79af] hover:border-2 ">
-              <div className="w-72 hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
-                <Image src={hp} className="w-full" alt="image" />
-                <div className="absolute hidden group-hover:block ">
-                  <div className="text-white flex ">
-                    <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
-                      <button>
-                        <FaRegPlayCircle className="h-10" />
-                      </button>
-                      <span>Play</span>
-                    </div>
-                    <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
-                      <button>
-                        <FiPlay className="h-10" />
-                      </button>
-                      <button>
-                        <VscAdd className="h-10" />
-                      </button>
-                      <button>
-                        <BiBlock className="h-10" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="text-white p-2 px-4">
-                    <h3>Hera Pheri</h3>
-                    <p className="my-3">
-                      Three unemployed men find the answer to all their money
-                      problems when they recieve a call from a kidnapper
-                    </p>
-                    <p className="flex items-center gap-5">
-                      2hr 13min
-                      <span>2000</span>
-                      <TfiCommentAlt />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="hover:border-[#0f79af] hover:border-2 ">
-              <div className="w-72 hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
-                <Image src={hp} className="w-full" alt="image" />
-                <div className="absolute hidden group-hover:block ">
-                  <div className="text-white flex ">
-                    <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
-                      <button>
-                        <FaRegPlayCircle className="h-10" />
-                      </button>
-                      <span>Play</span>
-                    </div>
-                    <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
-                      <button>
-                        <FiPlay className="h-10" />
-                      </button>
-                      <button>
-                        <VscAdd className="h-10" />
-                      </button>
-                      <button>
-                        <BiBlock className="h-10" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="text-white p-2 px-4">
-                    <h3>Hera Pheri</h3>
-                    <p className="my-3">
-                      Three unemployed men find the answer to all their money
-                      problems when they recieve a call from a kidnapper
-                    </p>
-                    <p className="flex items-center gap-5">
-                      2hr 13min
-                      <span>2000</span>
-                      <TfiCommentAlt />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="hover:border-[#0f79af] hover:border-2 ">
-              <div className="w-72 hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
-                <Image src={hp} className="w-full" alt="image" />
-                <div className="absolute hidden group-hover:block ">
-                  <div className="text-white flex ">
-                    <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
-                      <button>
-                        <FaRegPlayCircle className="h-10" />
-                      </button>
-                      <span>Play</span>
-                    </div>
-                    <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
-                      <button>
-                        <FiPlay className="h-10" />
-                      </button>
-                      <button>
-                        <VscAdd className="h-10" />
-                      </button>
-                      <button>
-                        <BiBlock className="h-10" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="text-white p-2 px-4">
-                    <h3>Hera Pheri</h3>
-                    <p className="my-3">
-                      Three unemployed men find the answer to all their money
-                      problems when they recieve a call from a kidnapper
-                    </p>
-                    <p className="flex items-center gap-5">
-                      2hr 13min
-                      <span>2000</span>
-                      <TfiCommentAlt />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex h-full w-full justify-center items-center gap-8 ml-96 my-4">
-            <div className="hover:border-[#0f79af] hover:border-2 ">
-              <div className="w-72 hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
-                <Image src={hp} className="w-full" alt="image" />
-                <div className="absolute hidden group-hover:block ">
-                  <div className="text-white flex ">
-                    <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
-                      <button>
-                        <FaRegPlayCircle className="h-10" />
-                      </button>
-                      <span>Play</span>
-                    </div>
-                    <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
-                      <button>
-                        <FiPlay className="h-10" />
-                      </button>
-                      <button>
-                        <VscAdd className="h-10" />
-                      </button>
-                      <button>
-                        <BiBlock className="h-10" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="text-white p-2 px-4">
-                    <h3>Hera Pheri</h3>
-                    <p className="my-3">
-                      Three unemployed men find the answer to all their money
-                      problems when they recieve a call from a kidnapper
-                    </p>
-                    <p className="flex items-center gap-5">
-                      2hr 13min
-                      <span>2000</span>
-                      <TfiCommentAlt />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="hover:border-[#0f79af] hover:border-2 ">
-              <div className="w-72 hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
-                <Image src={hp} className="w-full" alt="image" />
-                <div className="absolute hidden group-hover:block ">
-                  <div className="text-white flex ">
-                    <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
-                      <button>
-                        <FaRegPlayCircle className="h-10" />
-                      </button>
-                      <span>Play</span>
-                    </div>
-                    <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
-                      <button>
-                        <FiPlay className="h-10" />
-                      </button>
-                      <button>
-                        <VscAdd className="h-10" />
-                      </button>
-                      <button>
-                        <BiBlock className="h-10" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="text-white p-2 px-4">
-                    <h3>Hera Pheri</h3>
-                    <p className="my-3">
-                      Three unemployed men find the answer to all their money
-                      problems when they recieve a call from a kidnapper
-                    </p>
-                    <p className="flex items-center gap-5">
-                      2hr 13min
-                      <span>2000</span>
-                      <TfiCommentAlt />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="hover:border-[#0f79af] hover:border-2 ">
-              <div className="w-72 hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
-                <Image src={hp} className="w-full" alt="image" />
-                <div className="absolute hidden group-hover:block ">
-                  <div className="text-white flex ">
-                    <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
-                      <button>
-                        <FaRegPlayCircle className="h-10" />
-                      </button>
-                      <span>Play</span>
-                    </div>
-                    <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
-                      <button>
-                        <FiPlay className="h-10" />
-                      </button>
-                      <button>
-                        <VscAdd className="h-10" />
-                      </button>
-                      <button>
-                        <BiBlock className="h-10" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="text-white p-2 px-4">
-                    <h3>Hera Pheri</h3>
-                    <p className="my-3">
-                      Three unemployed men find the answer to all their money
-                      problems when they recieve a call from a kidnapper
-                    </p>
-                    <p className="flex items-center gap-5">
-                      2hr 13min
-                      <span>2000</span>
-                      <TfiCommentAlt />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="hover:border-[#0f79af] hover:border-2 ">
-              <div className="w-72 hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
-                <Image src={hp} className="w-full" alt="image" />
-                <div className="absolute hidden group-hover:block ">
-                  <div className="text-white flex ">
-                    <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
-                      <button>
-                        <FaRegPlayCircle className="h-10" />
-                      </button>
-                      <span>Play</span>
-                    </div>
-                    <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
-                      <button>
-                        <FiPlay className="h-10" />
-                      </button>
-                      <button>
-                        <VscAdd className="h-10" />
-                      </button>
-                      <button>
-                        <BiBlock className="h-10" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="text-white p-2 px-4">
-                    <h3>Hera Pheri</h3>
-                    <p className="my-3">
-                      Three unemployed men find the answer to all their money
-                      problems when they recieve a call from a kidnapper
-                    </p>
-                    <p className="flex items-center gap-5">
-                      2hr 13min
-                      <span>2000</span>
-                      <TfiCommentAlt />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="hover:border-[#0f79af] hover:border-2 ">
-              <div className="w-72 hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
-                <Image src={hp} className="w-full" alt="image" />
-                <div className="absolute hidden group-hover:block ">
-                  <div className="text-white flex ">
-                    <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
-                      <button>
-                        <FaRegPlayCircle className="h-10" />
-                      </button>
-                      <span>Play</span>
-                    </div>
-                    <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
-                      <button>
-                        <FiPlay className="h-10" />
-                      </button>
-                      <button>
-                        <VscAdd className="h-10" />
-                      </button>
-                      <button>
-                        <BiBlock className="h-10" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="text-white p-2 px-4">
-                    <h3>Hera Pheri</h3>
-                    <p className="my-3">
-                      Three unemployed men find the answer to all their money
-                      problems when they recieve a call from a kidnapper
-                    </p>
-                    <p className="flex items-center gap-5">
-                      2hr 13min
-                      <span>2000</span>
-                      <TfiCommentAlt />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="hover:border-[#0f79af] hover:border-2 ">
-              <div className="w-72 hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
-                <Image src={hp} className="w-full" alt="image" />
-                <div className="absolute hidden group-hover:block ">
-                  <div className="text-white flex ">
-                    <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
-                      <button>
-                        <FaRegPlayCircle className="h-10" />
-                      </button>
-                      <span>Play</span>
-                    </div>
-                    <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
-                      <button>
-                        <FiPlay className="h-10" />
-                      </button>
-                      <button>
-                        <VscAdd className="h-10" />
-                      </button>
-                      <button>
-                        <BiBlock className="h-10" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="text-white p-2 px-4">
-                    <h3>Hera Pheri</h3>
-                    <p className="my-3">
-                      Three unemployed men find the answer to all their money
-                      problems when they recieve a call from a kidnapper
-                    </p>
-                    <p className="flex items-center gap-5">
-                      2hr 13min
-                      <span>2000</span>
-                      <TfiCommentAlt />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="hover:border-[#0f79af] hover:border-2 ">
-              <div className="w-72 hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
-                <Image src={hp} className="w-full" alt="image" />
-                <div className="absolute hidden group-hover:block ">
-                  <div className="text-white flex ">
-                    <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
-                      <button>
-                        <FaRegPlayCircle className="h-10" />
-                      </button>
-                      <span>Play</span>
-                    </div>
-                    <div className="w-1/2 h-full flex justify-end items-center gap-4 px-4">
-                      <button>
-                        <FiPlay className="h-10" />
-                      </button>
-                      <button>
-                        <VscAdd className="h-10" />
-                      </button>
-                      <button>
-                        <BiBlock className="h-10" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="text-white p-2 px-4">
-                    <h3>Hera Pheri</h3>
-                    <p className="my-3">
-                      Three unemployed men find the answer to all their money
-                      problems when they recieve a call from a kidnapper
-                    </p>
-                    <p className="flex items-center gap-5">
-                      2hr 13min
-                      <span>2000</span>
-                      <TfiCommentAlt />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </div> */}
 
         <Footer />
       </main>
