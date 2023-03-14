@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import hp from "../../public/images/herapheri.jpg";
@@ -43,10 +42,10 @@ export default function Home() {
         <div className="h-full w-full ">
           <span className="text-[#8197a4] px-10">Amazon Original Series</span>
           <div className="flex-col justify-center items-center">
-            <div className="flex justify-center items-center gap-8 my-8 max-sm:flex-col sm:mx-12">
-              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+            <div className=" flex justify-center items-center gap-8 my-8 max-sm:flex-col sm:mx-12">
+              <div className="hover:z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
                 <Image src={hp} className="w-full" alt="image" />
-                <div className="bg-[#18232f] absolute hidden group-hover:block ">
+                <div className="bg-[#18232f] absolute hidden group-hover:block">
                   <div className="text-white flex ">
                     <div className="w-1/2 h-full flex justify-start items-center gap-3 px-4">
                       <button>
@@ -80,7 +79,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+              <div className="hover:z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
                 <Image src={hp} className="w-full" alt="image" />
                 <div className="bg-[#18232f] absolute hidden group-hover:block ">
                   <div className="text-white flex ">
@@ -116,7 +115,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+              <div className="hover:z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
                 <Image src={hp} className="w-full" alt="image" />
                 <div className="bg-[#18232f] absolute hidden group-hover:block ">
                   <div className="text-white flex ">
@@ -152,7 +151,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+              <div className="hover:z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
                 <Image src={hp} className="w-full" alt="image" />
                 <div className="bg-[#18232f] absolute hidden group-hover:block ">
                   <div className="text-white flex ">
@@ -190,7 +189,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center items-center gap-8 my-8 max-sm:flex-col sm:mx-12">
-              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+              <div className="hover:z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
                 <Image src={i3} className="w-full" alt="image" />
                 <div className="bg-[#18232f] absolute hidden group-hover:block ">
                   <div className="text-white flex ">
@@ -226,7 +225,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+              <div className="hover:z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
                 <Image src={i3} className="w-full" alt="image" />
                 <div className="bg-[#18232f] absolute hidden group-hover:block ">
                   <div className="text-white flex ">
@@ -262,7 +261,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+              <div className="hover:z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
                 <Image src={i3} className="w-full" alt="image" />
                 <div className="bg-[#18232f] absolute hidden group-hover:block ">
                   <div className="text-white flex ">
@@ -298,7 +297,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+              <div className="hover:z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
                 <Image src={i3} className="w-full" alt="image" />
                 <div className="bg-[#18232f] absolute hidden group-hover:block ">
                   <div className="text-white flex ">
@@ -336,7 +335,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center items-center gap-8 my-8 max-sm:flex-col sm:mx-12">
-              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+              <div className="hover:z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
                 <Image src={i4} className="w-full" alt="image" />
                 <div className="bg-[#18232f] absolute hidden group-hover:block ">
                   <div className="text-white flex ">
@@ -372,7 +371,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+              <div className="hover:z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
                 <Image src={i4} className="w-full" alt="image" />
                 <div className="bg-[#18232f] absolute hidden group-hover:block ">
                   <div className="text-white flex ">
@@ -408,7 +407,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+              <div className="hover:z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
                 <Image src={i4} className="w-full" alt="image" />
                 <div className="bg-[#18232f] absolute hidden group-hover:block ">
                   <div className="text-white flex ">
@@ -444,7 +443,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
+              <div className="hover:z-20 w-72  hover:w-80  group relative ease-in-out transition duration-400 delay-10 hover:scale-110">
                 <Image src={i4} className="w-full" alt="image" />
                 <div className="bg-[#18232f] absolute hidden group-hover:block ">
                   <div className="text-white flex ">
