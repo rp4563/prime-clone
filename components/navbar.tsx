@@ -39,7 +39,7 @@ const Navbar = () => {
               <MdAccountCircle className="h-full w-full" />
             </ol>
             <span className="max-sm:hidden flex items-center gap-1">
-              <ol>Harsh</ol>
+              <ol>Ritik</ol>
               <ol>
                 <AiOutlineCaretDown className="mt-1.5" />
                 <div className=" bg-[#252e39] right-[-14px] w-96 h-72 gap-8 mt-4 max-md:w-screen absolute hidden group-hover:flex ">
@@ -47,7 +47,7 @@ const Navbar = () => {
                     <ol>Account & Settings</ol>
                     <ol className="my-4">Watch Anywhere</ol>
                     <ol className="my-4">Help</ol>
-                    <ol>Not Harsh? Sign Out</ol>
+                    <ol>Not Ritik? Sign Out</ol>
                   </div>
                   <div className="flex-col gap-4 border-solid p-8 px-14 border-white border-l-2 max-md:w-1/2">
                     <ol>Kids</ol>
